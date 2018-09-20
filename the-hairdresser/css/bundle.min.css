@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Tenor+Sans&subset=cyrillic");
+body {
+  background-color: rgba(240, 233, 233, 0.712); }
+
+.navbar-nav .nav-link {
+  font-family: 'Tenor Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem; }
+  .navbar-nav .nav-link:hover {
+    color: #0b0bb4; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQSxrRkFBWTtBQUVaO0VBQ0UsNkNBQTRDLEVBQzdDOztBQUVEO0VBRUksc0NBQXFDO0VBQ3JDLGlCQUFnQjtFQUNoQixrQkFBaUIsRUFLbEI7RUFUSDtJQU9NLGVBQThCLEVBQy9CIiwiZmlsZSI6ImJ1bmRsZS5taW4uY3NzIiwic291cmNlc0NvbnRlbnQiOlsiJGJsdWUtY29sb3I6IHJnYig1MCwgNTAsIDI0Myk7XHJcbkBpbXBvcnQgdXJsKCdodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2Nzcz9mYW1pbHk9VGVub3IrU2FucyZzdWJzZXQ9Y3lyaWxsaWMnKTtcclxuXHJcbmJvZHkge1xyXG4gIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMjQwLCAyMzMsIDIzMywgMC43MTIpO1xyXG59XHJcblxyXG4ubmF2YmFyLW5hdiB7XHJcbiAgJiAubmF2LWxpbmsge1xyXG4gICAgZm9udC1mYW1pbHk6ICdUZW5vciBTYW5zJywgc2Fucy1zZXJpZjtcclxuICAgIGZvbnQtd2VpZ2h0OiA0MDA7XHJcbiAgICBmb250LXNpemU6IDEuNXJlbTtcclxuXHJcbiAgICAmOmhvdmVyIHtcclxuICAgICAgY29sb3I6IGRhcmtlbigkYmx1ZS1jb2xvciwgMjApO1xyXG4gICAgfVxyXG4gIH1cclxufSJdfQ== */
