@@ -13,9 +13,7 @@
   <div class="bg-wrapper"></div>
   <header class="header">
     <div class="header__logo-box">
-      <img src="img/logo/logo.png" srcset="img/logo/logo@2x.png 2x,
-      img/logo/logo@3x.png 3x" class="header__logo"
-        alt="BIEI">
+      <img src="img/logo/logo.png" class="header__logo" alt="BIEI">
     </div>
     <div class="header__text-box">
       <h1 class="header__heading">
@@ -29,10 +27,9 @@
       </div>
     </div>
     <div class="header__mockup">
-      <img src="img/mock.jpg" srcset="img/mock@2x.jpg 2x,
-      img/mock@3x.jpg 3x" alt="" class="header__mockup-img">
+      <img src="img/mock.jpg" alt="" class="header__mockup-img">
     </div>
-    <button class="btn btn--blue">
+    <button class="btn btn--blue" id="open-button">
       <img src="img/icons/ic-play.svg" alt="" class="btn__icon">
       <span>Watch demo</span>
     </button>
@@ -70,9 +67,7 @@
           </div>
         </div>
         <div class="arrows__logo-container">
-          <img src="img/logo/info-logo.jpg" srcset="img/logo/info-logo@2x.jpg 2x,
-              img/logo/info-logo@3x.jpg 3x"
-            alt="">
+          <img src="img/logo/info-logo.jpg" alt="">
         </div>
         <div class="arrow">
           <img src="img/arrow-down.png" alt="">
@@ -255,6 +250,14 @@
       </div>
     </div>
   </footer>
+  <div id="modal" class="modal closed">
+    <a href="" class="modal__button" id="close-button">&times;</a>
+    <div class="modal__data">
+      <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/SbMJSpwxrdE" frameborder="0" allow="autoplay; encrypted-media"
+        allowfullscreen></iframe> -->
+    </div>
+  </div>
+  <div class="modal__overlay closed" id="modal-overlay"></div>
   <script src="js/app.js"></script>
 </body>
 
