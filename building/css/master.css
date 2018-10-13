@@ -1139,6 +1139,10 @@ html .scroll-top-view {
 /* CUSTOM CSS (ADD YOUR CSS HERE!) */
 /*//////////////////////////////////////////////////////////////////////////////////////////*/
 
+.top-nav .container-fluid {
+  padding-left: 0;
+  padding-right: 0; }
+
 .navbar.yamm {
   min-height: auto; }
 
