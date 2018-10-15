@@ -366,12 +366,6 @@ table {
   padding: 8px 22px;
 }
 
-.fade {
-  opacity: 0;
-  -webkit-transition: opacity 0.15s linear;
-  transition: opacity 0.15s linear;
-}
-
 /* uncss:ignore start */
 
 .collapse {
@@ -678,35 +672,6 @@ tbody.collapse.in {
   vertical-align: top;
 }
 
-.modal {
-  display: none;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1040;
-  -webkit-overflow-scrolling: touch;
-  outline: 0;
-}
-
-.modal-content {
-  background-clip: padding-box;
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 0;
-  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-  color: #000;
-  display: block;
-  margin: 5% auto;
-  max-width: 920px;
-  outline: 0 none;
-  overflow: hidden;
-  padding: 10px;
-  position: relative;
-}
-
 .clearfix:before,
 .clearfix:after,
 .container:before,
@@ -897,7 +862,7 @@ html [class*=" flaticon-"]::after {
 .header {
   clear: both;
   display: inline-block;
-  margin: 17px 0 0;
+  margin: 8px 0 0;
   width: 100%;
   position: relative;
   z-index: 88;
@@ -1360,6 +1325,8 @@ html .scroll-top-view {
 
 .navbar.yamm {
   min-height: auto;
+  margin-bottom: 0;
+  top: 15px;
 }
 
 .navbar.yamm .nav > li > a {
@@ -1380,7 +1347,7 @@ html .scroll-top-view {
 
 .iview .iviewSlider {
   display: block;
-  min-height: 95vh;
+  min-height: 50vh;
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1416,9 +1383,9 @@ html .scroll-top-view {
 
 /* IVIEW STYLES  END*/
 
-.carousel-text .price {
+.carousel-text .price-box {
   color: #ffc300;
-  margin-top: 10px;
+  margin: 10px 0;
   padding: 0;
 }
 
@@ -1488,6 +1455,19 @@ html .scroll-top-view {
 }
 
 /* 02 Catalog */
+
+.price-box {
+  font-weight: 600;
+  color: #000;
+  font-size: 18px;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.price-box span {
+  margin-right: 5px;
+}
 
 /*04 ITEM */
 
@@ -1908,10 +1888,6 @@ body {
     padding-top: 14.5px;
     padding-bottom: 14.5px;
   }
-
-  .modal-content {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  }
 }
 
 @media (min-width: 992px) {
@@ -2011,6 +1987,18 @@ body {
 
   .hidden-lg {
     display: none !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .iview .iviewSlider {
+    min-height: 60vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .iview .iviewSlider {
+    min-height: 80vh;
   }
 }
 
