@@ -1,0 +1,147 @@
+.catalog-window .list-menu {
+  background-color: #f4f4f4;
+}
+
+.catalog-window .menu_item > a {
+  color: #29ad32;
+}
+
+.catalog-window .menu_item.active_item {
+  background-color: #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.35);
+}
+
+.catalog-window .menu_item.active_item .submenu_container {
+  display: block;
+}
+
+.catalog-window .menu_item.active_item .submenu_item.active_item .list_sub_sub_menu {
+  display: -webkit-box;
+  display: flex;
+}
+
+.catalog-window .submenu_container {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 400px;
+  width: 200%;
+  height: auto;
+  min-height: 200px;
+  background-color: #fff;
+}
+
+.catalog-window .submenu_container .submenu_content {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: flex;
+  overflow-y: auto;
+}
+
+.catalog-window .submenu_container .list_sub_menu {
+  height: 100%;
+  position: static;
+  background: none;
+}
+
+.catalog-window .submenu_container .list_sub_menu a {
+  color: #00b4f0;
+}
+
+.catalog-window .submenu_container .list_sub_menu .list_sub_sub_menu {
+  display: -webkit-box;
+  display: flex;
+}
+
+.catalog-window .submenu_container .list_sub_menu .list_sub_sub_menu .sub_sub_menu_item {
+  margin-bottom: 5px;
+}
+
+.catalog-window .submenu_container .list_sub_menu .list_sub_sub_menu a {
+  padding-left: 0;
+  color: #5d5d5e;
+}
+
+.catalog-window .submenu_container .list_sub_menu .list_sub_sub_menu a.watch-more {
+  color: #29ad32;
+  text-decoration: underline;
+}
+
+.catalog-window .submenu_container .submenu_img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.catalog-window .submenu_container .submenu_img.img_office-equip {
+  bottom: -54px;
+}
+
+.catalog-window .submenu_container .submenu_img.img_appliances {
+  bottom: -143px;
+}
+
+.catalog-window .submenu_container .submenu_img.img_tv-video {
+  bottom: -100px;
+}
+
+.catalog-window .submenu_container .submenu_img.img_audiotechnic {
+  bottom: -180px;
+}
+
+.catalog-window .submenu_container .submenu_img.img_auto {
+  bottom: -158px;
+}
+
+.catalog-window .submenu_container .submenu_img.img_home {
+  bottom: -400px;
+}
+
+.catalog-window .submenu_container .submenu_img.img_tourism {
+  bottom: -219px;
+}
+
+.catalog-window .submenu_container .submenu_img.img_repair {
+  bottom: -40px;
+}
+
+.catalog-window .submenu_container .submenu_img img {
+  max-width: 100%;
+  max-height: auto;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .catalog-window .menu_item.active_item .submenu_item {
+    margin-bottom: 5px;
+  }
+
+  .catalog-window .submenu_container {
+    position: static;
+    width: 100%;
+    min-height: auto;
+  }
+
+  .catalog-window .submenu_container .submenu_content {
+    display: block;
+  }
+
+  .catalog-window .submenu_container .list_sub_menu {
+    padding-top: 0;
+  }
+
+  .catalog-window .submenu_container .list_sub_menu .list_sub_sub_menu {
+    display: none;
+  }
+
+  .catalog-window .submenu_container .submenu_img {
+    display: none;
+  }
+}
