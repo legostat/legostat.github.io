@@ -402,6 +402,7 @@ $(function () {
 		$('.popup_bg').addClass('popup-active');
 		$('.popup_bg').css({'z-index': '1000'})
 	});
+
 	$('.mob_menu_close').on('click', function() {
 		$('.mob_menu_list').removeClass('mob_menu_active');
 		// $('.mob_menu_list').hide()
@@ -575,7 +576,21 @@ $(function () {
 	// });
 
 	$(".menu_item_link")
-    .on("click", function(e) {
+    .on("mouseover", function() {
+			// if($(this).hasClass('rotate_arrow')) {
+			// 	$(".menu_item").removeClass("active_item");
+      // 	$(".menu_item_link").removeClass("rotate_arrow");
+			// 	return;
+			// }
+      $(".menu_item").removeClass("active_item");
+      $(".menu_item_link").removeClass("rotate_arrow");
+      $(this)
+        .parent(".menu_item")
+        .toggleClass("active_item");
+      $(this).toggleClass("rotate_arrow");
+		});
+
+	$(".menu_item_link").on("touchstart", function(e) {
 			e.preventDefault();
 			if($(this).hasClass('rotate_arrow')) {
 				$(".menu_item").removeClass("active_item");
@@ -586,17 +601,19 @@ $(function () {
       $(".menu_item_link").removeClass("rotate_arrow");
       $(this)
         .parent(".menu_item")
-        .addClass("active_item");
-      // $(this).siblings('.submenu_container').slideToggle();
-      $(this).addClass("rotate_arrow");
+        .toggleClass("active_item");
+      $(this).toggleClass("rotate_arrow");
     });
 
-	$(".submenu_item_link").on("click", function (e) {
-		if($(this).attr("href") === "#") {
+
+	$(".submenu_item_link").on("touchstart", function(e) {
+		if($(this).siblings().length > 0) {
 			e.preventDefault();
 		}
-		$(this).parent(".submenu_item").toggleClass("active_item");
-	});
+    $(this)
+      .parent(".submenu_item")
+      .toggleClass("active_item");
+  });
 
 	// $(".submenu_item.active_item .submenu_item_link").on("click", function (e) {
 	// 	e.preventDefault();
@@ -668,14 +685,14 @@ $(function () {
 		$('.item_popup').removeClass('showPopup');
 		$('#pop-up_bg').removeClass('popup-active');
 		$('.fixed_header').css({'z-index': '1005'});
-		$('#nav-btn').css({'z-index': '1005'});
+		$('#nav-btn').css({'z-index': '1010'});
 	});
 
 	$('#pop-up_bg').on('click', function() {
 		$('.item_popup').removeClass('showPopup');
 		$('#pop-up_bg').removeClass('popup-active');
 		$('.fixed_header').css({'z-index': '1005'});
-		$('#nav-btn').css({'z-index': '1005'});
+		$('#nav-btn').css({'z-index': '1010'});
 	});
 
 
@@ -734,11 +751,30 @@ $(function () {
 
 	});
 
-	$("#nav-btn").click(function () {
-		$("#pop-up_bg").toggleClass("popup-active");
-		$("#catalog-menu").toggleClass("popup-active");
-		$(".list-menu").toggleClass("popup-active");
+	$("#nav-btn").on("click", function() {
+		if($("#pop-up_bg").hasClass("popup-active")) {
+			$(".menu_item").removeClass("active_item");
+    	$(".submenu_item").removeClass("active_item");
+			$("#pop-up_bg").removeClass("popup-active");
+			$("#catalog-menu").removeClass("popup-active");
+			$(".list-menu").removeClass("popup-active");
+			return;
+		}
+		$("#pop-up_bg").addClass("popup-active");
+		$("#catalog-menu").addClass("popup-active");
+		$(".list-menu").addClass("popup-active");
 	});
+
+	$("#nav-btn").on("mouseover", function() {
+		if(!('ontouchstart' in document.documentElement ) && !navigator.userAgent.match(/Mobi/)) {
+			$("#pop-up_bg").addClass("popup-active");
+			$("#catalog-menu").addClass("popup-active");
+			$(".list-menu").addClass("popup-active");
+		}
+	});
+
+
+
 
 	$("#pop-up_bg").click(function () {
 		$(".menu_item").removeClass("active_item");
@@ -873,11 +909,6 @@ $(function () {
 	/*if the user clicks anywhere outside the select box,
 	then close all select boxes:*/
 	document.addEventListener("click", closeAllSelect);
-
-
-
-
-
 });
 
 
