@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Product Landing Page</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bundle.css">
+</head>
+<body>
+  <header id="header" class="header-top">
+    <div class="container">
+      <div class="logo">
+        <img class="logo-img" src="images/logo-white.png" id="header-img" alt="logo">
+      </div>
+      <nav id="nav-bar" class="navbar">
+        <ul class="navigation">
+          <li class="nav">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav">
+            <a class="nav-link" href="#why">Why Us</a>
+          </li>
+          <li class="nav">
+            <a class="nav-link" href="#purchase">Contact & Purchase</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="banner">
+    <div class="banner-text">
+      <h1 class="banner-title">trendy stuffs</h1>
+      <div class="banner-subtitle">when life happens</div>
+      <a href="#purchase" class="btn">Order a sofa</a>
+    </div>
+  </div>
+  <div id="about" class="about">
+    <h2 class="about-title">Who we are</h2>
+    <div class="container">
+      <div class="about-item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sit amet, quo sunt mollitia corrupti ab atque, quod nostrum quos, sed voluptates! Ab, quos? Impedit et eligendi fuga laboriosam qui deleniti asperiores dolorum. Molestiae id sed tempora sit cum accusantium laborum rerum, natus quisquam tempore adipisci error distinctio aperiam sapiente.
+      </div>
+      <div class="about-item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nam eligendi ratione illum deleniti consequatur molestiae nobis temporibus consectetur facilis, accusamus dolores commodi ea, magnam architecto possimus non animi beatae eos doloribus itaque asperiores. Harum commodi deserunt odit at corporis inventore aut dolore? Voluptates.
+      </div>
+    </div>
+    <div class="about-video">
+      <iframe id="video" height="315" src="https://www.youtube.com/embed/jvq7YmU46QI?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"
+        allowfullscreen ></iframe>
+    </div>
+  </div>
+  <div id="why" class="why">
+    <h2 class="why-title">
+      Why us?
+    </h2>
+    <div class="why-container">
+      <div class="why-item">
+        <div class="why-icon"><i class="fas fa-couch"></i></div>
+        <h3 class="why-item-title">Premium Materials</h3>
+        <div class="item-description">Our sofas use the premium wood, textile and leather which are sourced locally. This will increase the longevity of your
+        purchase.</div>
+      </div>
+      <div class="why-item">
+        <div class="why-icon"><i class="fas fa-truck"></i></div>
+        <h3 class="why-item-title">Fast Shipping</h3>
+        <div class="item-description">We make sure you receive your sofa as soon as we have finished making it. We also provide free returns if you are not satisfied.</div>
+      </div>
+      <div class="why-item">
+        <div class="why-icon"><i class="fas fa-check-double"></i></div>
+        <h3 class="why-item-title">Multi-step Quality Control</h3>
+        <div class="item-description">For every purchase you make, we will ensure there are no damages or faults and we will check the quality of your furniture.</div>
+      </div>
+    </div>
+  </div>
+  <div id="purchase" class="purchase">
+    <h2 class="purchase-title">
+      For any questions related to purchase, contact us via form below
+    </h2>
+    <form action="https://www.freecodecamp.com/email-submit" id="form" class="form" method="POST">
+      <div class="form-group">
+        <label class="form-label" for="name" id="name-label">Name <span class="required">*</span> :</label>
+        <input class="form-input" type="text" name="name" id="name" placeholder="Enter your name" required />
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="email" id="email-label">Email <span class="required">*</span> :</label>
+        <input class="form-input" type="email" name="email" id="email" placeholder="Enter your email" required />
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="textarea" id="textarea-label">Your question?</label>
+        <textarea class="form-input" name="textarea" id="textarea" rows="5" placeholder="Enter your question here..."></textarea>
+      </div>
+      <div class="form-group">
+        <input class="btn" type="submit" id="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+  <footer class="footer">
+    &copy;2018 &mdash; Oleg Kolisnyk
+  </footer>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
