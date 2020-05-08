@@ -80,7 +80,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #EFEFEF;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: .2rem;
 }
 
@@ -94,7 +94,7 @@ body {
   background-color: #EFEFEF;
   -webkit-transform: scale(0);
           transform: scale(0);
-  transition: all .3s ease-in-out;
+  transition: transform .7s ease-in-out .2s;
 }
 
 .nav:hover .nav-link::after {
