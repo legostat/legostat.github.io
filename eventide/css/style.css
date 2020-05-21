@@ -76,7 +76,6 @@ h2 {
 .header {
 	background:  #525b64 url(../img/header-bg.jpg) center no-repeat;
 	background-size: cover;
-	// height: 100vh;
 	height: 100%;
 	min-height: 500px;
 }
